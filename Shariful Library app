@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rohingya Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background-color: #008080;
+      color: white; gold; 
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #004d4d;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: input;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #008080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .book {
+      background: white;
+      padding: 10px;
+      border: 1px solid #ccc;
+      flex: 1 0 200px;
+    }
+    input[type="text"] {
+      padding: 8px;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+    @media (max-width: 600px) {
+      .book-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rohingya Library</h1>
+    <p>Education for all — Read, Learn,this is shariful library Grow</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#books">Books</a>
+    <a href="#upload">Upload</a>
+    <a href="#contact">Contact</a>
+    <a href="#book">looking books</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>The Rohingya Library is a community project to bring education through books in English, Rohingya, and Burmese languages. We believe in the power of knowledge to change lives.</p>
+  </section>
+
+  <section id="books">
+    <h2>Available Books</h2>
+    <input type="text" id="searchInput" placeholder="Search for a book..." onkeyup="searchBooks()">
+    <div class="book-list" id="bookList">
+      <div class="book"><h3>English Grammar</h3><p>Level: Beginner</p></div>
+      <div class="book"><h3>Science for all</h3><p>Level: Grade 1-12</p></div>
+      <div class="book"><h3>Basic to high Burmese</h3><p>Learn simple Burmese phrases</p></div>
+    </div>
+  </section>
+
+  <section id="upload">
+    <h2>Upload a Book</h2>
+    <form>
+      <label>Book Title: <input type="text" name="title"></label><br><br>
+      <label>Upload File: <input type="file" name="file"></label><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: arksharifulazam@gmail.com</p>
+    <p>Location: Camp 17, Cox's Bazar, Bangladesh</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rohingya Library. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function searchBooks() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let books = document.querySelectorAll('.book');
+      books.forEach(book => {
+        let title = book.querySelector('h3').innerText.toLowerCase();
+        book.style.display = title.includes(input) ? '' : 'store';
+      });
+    }
+  </script>
+</body>
+</app>
+    </p>deployed this app.</p>
+</p>published this on ('google chrome')google play store,browsers.</p>
+    </p>this app is service with google.</p>
